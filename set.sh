@@ -1,5 +1,8 @@
 #!/bin/bash
 
+source ./common.sh 
+checkroot
+
 set -e
 
 
