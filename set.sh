@@ -11,7 +11,7 @@ failure() {
 trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
 
-dnf install mysqllll -y
+dnf install git111 -y
 #VALIDATE $? "mysql server installation"
 
 
