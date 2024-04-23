@@ -4,7 +4,7 @@ source ./common.sh
 checkroot
 
 
-echo -e "$R red in color"
+
 echo "Enter password:"
 read DB_SERVER_PASSWORD
 #ExpenseApp@1
