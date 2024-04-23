@@ -21,7 +21,7 @@ read DB_SERVER_PASSWORD
 #dnf install nodejs -y &>>$LOGFILE
 #VALIDATE $? "Installation Node JS "
 
-useradd expense
+#useradd expense
 #id expense &>>$LOGFILE
 #if [ $? -ne 0 ];
 #then
