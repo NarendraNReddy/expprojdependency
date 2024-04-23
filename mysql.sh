@@ -10,17 +10,17 @@ read DB_SERVER_PASSWORD
 #ExpenseApp@1
 
 
+dnf install mysql-server -y
+#dnf install mysql-server -y &>>$LOGFILE
+#VALIDATE $? "mysql server installation"
 
-dnf install mysql-server -y &>>$LOGFILE
-VALIDATE $? "mysql server installation"
+systemctl enable mysqld
+#systemctl enable mysqld &>>$LOGFILE
+#VALIDATE $? "enable the mysqld"
 
-
-systemctl enable mysqld &>>$LOGFILE
-VALIDATE $? "enable the mysqld"
-
-
-systemctl start mysqld &>>$LOGFILE
-VALIDATE $? "start the mysqld"
+systemctl start mysqld
+#systemctl start mysqld &>>$LOGFILE
+#VALIDATE $? "start the mysqld"
 
 #idempotency   
 

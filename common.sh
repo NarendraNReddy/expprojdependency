@@ -9,7 +9,13 @@ Y="\e[33m"
 BL="\e[34m"
 N="\e[0m"
 
-#set -e
+set -e
+
+failure(){
+    echo "Failed at $1: $2"
+}
+
+trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
 
 VALIDATE()
