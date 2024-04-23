@@ -21,15 +21,15 @@ read DB_SERVER_PASSWORD
 #dnf install nodejs -y &>>$LOGFILE
 #VALIDATE $? "Installation Node JS "
 
-
+useradd expense
 #id expense &>>$LOGFILE
-if [ $? -ne 0 ];
-then
-    useradd expense 
+#if [ $? -ne 0 ];
+#then
+#    useradd expense 
     #VALIDATE $? "Adding the user expense"
-else 
-    echo -e "User expense is already present ... $Y SKIPPING $N"    
-fi 
+#else 
+#    echo -e "User expense is already present ... $Y SKIPPING $N"    
+#fi 
 
 mkdir -p /app
 #mkdir -p /app &>>$LOGFILE
