@@ -6,7 +6,7 @@ checkroot
 set -e
 
 
-dnf install mysqllll -y &>>$LOGFILE
+dnf install mysqllll -y
 #VALIDATE $? "mysql server installation"
 
 
