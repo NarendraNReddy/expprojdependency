@@ -9,6 +9,7 @@ Y="\e[33m"
 BL="\e[34m"
 N="\e[0m"
 
+#set -e
 
 
 VALIDATE()
