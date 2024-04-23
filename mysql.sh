@@ -10,7 +10,7 @@ read DB_SERVER_PASSWORD
 #ExpenseApp@1
 
 
-dnf install mysql-server -y #Mostly will use validate or user experiance
+dnf install mysql-serverrr -y #Mostly will use validate or user experiance
 #dnf install mysql-server -y &>>$LOGFILE
 #VALIDATE $? "mysql server installation"
 

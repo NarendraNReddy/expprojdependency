@@ -31,7 +31,7 @@ VALIDATE()
 USERID=$(id -u)
 
 checkroot(){
-    if [ $USERID -ne 0 ];
+if [ $USERID -ne 0 ];
 then 
     echo "Be a super user to install the commands"
     exit 1
